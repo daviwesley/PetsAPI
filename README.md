@@ -1,4 +1,4 @@
-# PetsApi
+# PetsApi [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 [see demo](https://petsapi.herokuapp.com/)
 
 This is just a simple API for educational purposes made with Elixir and Phoenix web framework, it will be update while I'm learning Elixir.
