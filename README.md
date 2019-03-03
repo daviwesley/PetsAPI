@@ -1,19 +1,9 @@
-# Apiexample
+# PetsApi
+[see demo](https://petsapi.herokuapp.com/)
 
-To start your Phoenix server:
+This is just a simple API for educational purposes made with Elixir and Phoenix web framework, it will be update while I'm learning Elixir.
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Start Phoenix endpoint with `mix phx.server`
-
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
-
-## Learn more
-
-  * Official website: http://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
+#### How to run
+* clone this repository
+* install Erlang, Elixir and Phoenix framework [Instalatioin guide](https://hexdocs.pm/phoenix/installation.html)
+* run `mix deps.compile` and `mix phx.server`
