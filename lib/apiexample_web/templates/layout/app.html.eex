@@ -7,9 +7,11 @@
     <title>PetsApi</title>
     <link href="https://fonts.googleapis.com/css?family=Petrona" rel="stylesheet">
   </head>
-  <body>
-    <div>
-      <p style="align-items:center; justify-content:center;font-size:46px;font-family:'Petrona',serif;">Em desenvolvimento!</p>
+  <body style="justify-content: center;align-items: center">
+    <div style="display: flex;flex-direction: column;justify-content: center;align-items: center">
+      <p style="font-size:46px;font-family:'Petrona',serif;text-align: center;">
+      Em desenvolvimento!
+      </p>
     </div>
   </body>
 </html>
