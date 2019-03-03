@@ -1,0 +1,7 @@
+{
+  "name": "PetsAPI",
+  "description": "Search for pets",
+  "repository": "https://github.com/daviwesley/PetsAPI",
+  "logo": "https://elixir-lang.org/images/logo/logo.png",
+  "keywords": ["elixir", "phoenix"]
+}
