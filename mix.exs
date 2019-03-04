@@ -42,7 +42,8 @@ defmodule Apiexample.MixProject do
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
-      {:plug_cowboy, "~> 2.0"}
+      {:plug_cowboy, "~> 2.0"},
+      {:ja_serializer, "~> 0.13.0"}
     ]
   end
 
