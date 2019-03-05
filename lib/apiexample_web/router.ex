@@ -10,7 +10,12 @@ defmodule ApiexampleWeb.Router do
   end
 
   pipeline :api do
-    plug :accepts, ["json"]
+    plug :accepts, ["api"]
+  end
+
+  pipeline :api_json do
+    plug :accepts, ["json-api"]
+    plug JaSerializer.Serializer
   end
 
   scope "/", ApiexampleWeb do
@@ -20,7 +25,8 @@ defmodule ApiexampleWeb.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", ApiexampleWeb do
-  #   pipe_through :api
-  # end
+   scope "/api", ApiexampleWeb do
+     pipe_through :api
+     resources "/pets", PetController, except: [:new, :edit]
+   end
 end

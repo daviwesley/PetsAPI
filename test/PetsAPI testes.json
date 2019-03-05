@@ -1,0 +1,171 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2019-03-05T15:52:54.220Z",
+	"__export_source": "insomnia.desktop.app:v6.3.2",
+	"resources": [
+		{
+			"_id": "wrk_f555fdd644784e218660735fe0be1a60",
+			"created": 1551746945455,
+			"description": "",
+			"modified": 1551746945455,
+			"name": "Insomnia",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_8080c4be7e054c109b42d781336d5da8",
+			"color": null,
+			"created": 1551746945501,
+			"data": {},
+			"isPrivate": false,
+			"metaSortKey": 1551746945501,
+			"modified": 1551746945501,
+			"name": "New Environment",
+			"parentId": "wrk_f555fdd644784e218660735fe0be1a60",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_b8a216ced7cc415aa7555822736d5625",
+			"cookies": [],
+			"created": 1551746945502,
+			"modified": 1551746945502,
+			"name": "Default Jar",
+			"parentId": "wrk_f555fdd644784e218660735fe0be1a60",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "req_3fc66148ce3a41869908ed45c9b79a6e",
+			"authentication": {},
+			"body": {},
+			"created": 1551794531961,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1551794531961,
+			"method": "GET",
+			"modified": 1551799966192,
+			"name": "Mosta todos os pets",
+			"parameters": [],
+			"parentId": "wrk_f555fdd644784e218660735fe0be1a60",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:4000/api/pets",
+			"_type": "request"
+		},
+		{
+			"_id": "req_e4d7e2ad509e4af489769df6db997d39",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"pet\": {\n\t\"race\": \"Pastor Holandes\",\n\t\"nacionality\": \"German\",\n\t\"allergies\": \"nothing\",\n\t\"eye_color\": \"black and white\",\n\t\"image\": \"https://petimage.com/dog2.png\",\n\t\"average_height\": 12,\n\t\"average_life_time\": 20,\n\t\"hair_color\": \"black\"\n\t}\n}"
+			},
+			"created": 1551794801638,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_5bcff67e3a1e4efa9fcffd320692ff33",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1551794531911,
+			"method": "POST",
+			"modified": 1551801141829,
+			"name": "Cria um Pet",
+			"parameters": [],
+			"parentId": "wrk_f555fdd644784e218660735fe0be1a60",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:4000/api/pets",
+			"_type": "request"
+		},
+		{
+			"_id": "req_ff68c5c7472b453390ee527d79efbb2b",
+			"authentication": {},
+			"body": {},
+			"created": 1551798909876,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1551798909876,
+			"method": "DELETE",
+			"modified": 1551801114254,
+			"name": "Deleta um pet",
+			"parameters": [],
+			"parentId": "wrk_f555fdd644784e218660735fe0be1a60",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:4000/api/pets/1",
+			"_type": "request"
+		},
+		{
+			"_id": "req_4b2b82cb938749b5a75083e47fd3ab09",
+			"authentication": {},
+			"body": {},
+			"created": 1551799910626,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1551799910626,
+			"method": "GET",
+			"modified": 1551801132640,
+			"name": "Mostra um pet específico",
+			"parameters": [],
+			"parentId": "wrk_f555fdd644784e218660735fe0be1a60",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:4000/api/pets/2",
+			"_type": "request"
+		},
+		{
+			"_id": "req_ee8281ff3cd14804b3ca5acf96ec4846",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"pet\":{\n\t\t\"race\": \"Wild Cat\"\n\t}\n}"
+			},
+			"created": 1551800640929,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_240bc4b24e2941d7936d0919293b78cb",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1551800640929,
+			"method": "PATCH",
+			"modified": 1551800725929,
+			"name": "Atualiza um pet",
+			"parameters": [],
+			"parentId": "wrk_f555fdd644784e218660735fe0be1a60",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:4000/api/pets/2",
+			"_type": "request"
+		}
+	]
+}
