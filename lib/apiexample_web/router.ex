@@ -15,7 +15,7 @@ defmodule ApiexampleWeb.Router do
 
   pipeline :api_json do
     plug :accepts, ["json-api"]
-    plug JaSerializer.Serializer
+    #plug JaSerializer.Serializer
   end
 
   scope "/", ApiexampleWeb do
