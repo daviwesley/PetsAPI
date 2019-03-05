@@ -1,7 +1,7 @@
 use Mix.Config
 
 config :apiexample, ApiexampleWeb.Endpoint,
-  url: [scheme: "https", host: "warm-fortress-26756.herokuapp.com", port: 443],
+  url: [scheme: "https", host: "petsapi.herokuapp.com", port: 443],
   force_ssl: [rewrite_on: [:x_forwarded_proto]],
   cache_static_manifest: "priv/static/cache_manifest.json",
   secret_key_base: Map.fetch!(System.get_env(), "SECRET_KEY_BASE"),
