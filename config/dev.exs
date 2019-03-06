@@ -65,3 +65,7 @@ config :apiexample, Apiexample.Repo,
   database: "apiexample_dev",
   hostname: "localhost",
   pool_size: 10
+
+  config :apiexample, Apiexample.Auth.Guardian,
+    issuer: "apiexample",
+    secret_key: "1b8+n00RwUNfv6y8mbF/6vyzbbx4M80J08iAb55Mbp6NYqSqyuaK3mGzGFHOQkeq"

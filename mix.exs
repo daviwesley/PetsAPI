@@ -46,7 +46,8 @@ defmodule Apiexample.MixProject do
       # below we have extra libraries
       {:ja_serializer, "~> 0.13.0"},
       {:comeonin, "~> 4.0"},
-      {:argon2_elixir, "~> 1.2"}
+      {:argon2_elixir, "~> 1.2"},
+      {:guardian, "~> 1.0"}
     ]
   end
 
