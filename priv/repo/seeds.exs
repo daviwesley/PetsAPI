@@ -9,3 +9,11 @@
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
+user =
+  Apiexample.Accounts.User.registration_changeset(%Apiexample.Accounts.User{}, %{
+    name: "davi",
+    email: "davi.wesley@icloud.com",
+    password: "issodeveriaserumsegredo"
+  })
+
+Apiexample.Repo.insert!(user)
