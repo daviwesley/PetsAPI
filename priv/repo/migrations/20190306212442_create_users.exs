@@ -2,7 +2,7 @@ defmodule Apiexample.Repo.Migrations.CreateUsers do
   use Ecto.Migration
 
   def change do
-    #execute("CREATE EXTENSION citext;")
+    execute("CREATE EXTENSION citext;")
 
     create table(:users) do
       add(:name, :string, null: false)
