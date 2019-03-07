@@ -18,6 +18,10 @@ defmodule ApiexampleWeb.Router do
     #plug JaSerializer.Serializer
   end
 
+  pipeline :api_auth do
+    plug(Apiexample.Auth.Pipeline)
+  end
+
   scope "/", ApiexampleWeb do
     pipe_through :browser
 
@@ -28,5 +32,14 @@ defmodule ApiexampleWeb.Router do
    scope "/api", ApiexampleWeb do
      pipe_through :api
      resources "/pets", PetController, except: [:new, :edit]
+     post("/sessions", SessionController, :create)
+     post("/users", UserController, :create)
    end
+
+   scope "/api", ApiexampleWeb do
+    pipe_through([:api, :api_auth])
+    #resources "/pets", PetController, except: [:new, :edit]
+    delete("/sessions", SessionController, :delete)
+    post("/sessions/refresh", SessionController, :refresh)
+  end
 end
