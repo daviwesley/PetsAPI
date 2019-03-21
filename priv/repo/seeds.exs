@@ -15,8 +15,8 @@ user =
     email: "davi.wesley@icloud.com",
     password: "issodeveriaserumsegredo"
   })
-  
-firt_pet = Apiexample.Aninals.Pet.registracion_changeset(%Apiexample.Animals.Pet{}, %{
+
+pet = Apiexample.Animal.Pet.changeset(%Apiexample.Animal.Pet{}, %{
  race: "Bombay",
  average_life_time: 20,
  average_height: 8,
@@ -24,7 +24,8 @@ firt_pet = Apiexample.Aninals.Pet.registracion_changeset(%Apiexample.Animals.Pet
  nacionality: "USA and Thailand",
  hair_color: "black",
  eye_color: "copper or green",
+ image: "https://i1.wp.com/petradioshow.com/wp-content/uploads/2017/10/bombay.jpg?resize=572%2C434"
  })
- 
+
 Apiexample.Repo.insert!(user)
-Apiexample.Repo.insert!(first_pet)
+Apiexample.Repo.insert!(pet)
