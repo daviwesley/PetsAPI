@@ -6,4 +6,4 @@ This is just a simple API for educational purposes made with Elixir and Phoenix 
 #### How to run
 * clone this repository
 * install Erlang, Elixir and Phoenix framework [Installation guide](https://hexdocs.pm/phoenix/installation.html)
-* run `mix deps.compile` and `mix phx.server`
+* run `mix deps.get` and `mix phx.server`
