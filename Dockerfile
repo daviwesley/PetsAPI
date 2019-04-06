@@ -14,7 +14,7 @@ WORKDIR /app
 RUN mix local.hex --force
 RUN mix local.rebar --force
 RUN mix deps.get
-
+RUN chmod +x /app/entrypoint.sh
 # Compile the project
 RUN mix do compile
 
