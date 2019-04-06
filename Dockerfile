@@ -1,22 +1,21 @@
+# Use an official Elixir runtime as a parent image
 FROM elixir:latest
 
-RUN apt update
-RUN apt install postgresql postgresql-contrib -y
+EXPOSE 4000
+RUN apt-get update && \
+  apt-get install -y postgresql-client
+
+# Create app directory and copy the Elixir projects into it
+RUN mkdir /app
+COPY . /app
+WORKDIR /app
+
+# Install hex package manager
 RUN mix local.hex --force
-RUN mix archive.install hex phx_new 1.4.3 
 RUN mix local.rebar --force
+RUN mix deps.get
 
-EXPOSE 5000
-ENV PORT=5000 
-#ENV MIX_ENV=prod
-#ENV SECRET_KEY_BASE=kvmvc3qqL6jzkhpQgucfMPmU3SaXMLCdcjQV0mzJeE5hPdH5F3McJRc0wym7KLQB
+# Compile the project
+RUN mix do compile
 
-# Cache elixir deps
-ADD mix.exs mix.lock ./
-RUN mix do deps.get, deps.compile
-
-#USER default
-
-ADD . .
-
-CMD ["mix", "phx.server"]
+CMD ["/app/entrypoint.sh"]
