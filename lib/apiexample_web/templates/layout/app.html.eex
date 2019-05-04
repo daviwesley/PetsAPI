@@ -9,9 +9,11 @@
   </head>
   <body style="justify-content: center;align-items: center">
     <div style="display: flex;flex-direction: column;justify-content: center;align-items: center">
+      <div id="particles-js"></div>
       <p style="font-size:46px;font-family:'Petrona',serif;text-align: center;">
       Em desenvolvimento!
       </p>
     </div>
   </body>
+  <script src="particles.js"></script>
 </html>
